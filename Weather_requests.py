@@ -27,3 +27,4 @@ def get_weather_forecast(address):
 test_address = ' '
 get_weather_forecast(test_address)
 # for alerts and forecast use coords, for forecast discussion need Grid id from properties.
+
