@@ -15,11 +15,11 @@ client: Client = Client(intents=intents)
 @client.event
 async def send_message(message: Message, user_message: str) ->None:
     if not user_message:
-        print('(MEssage was empty because intents were not enabled)')
+        print('(Message was empty because intents were not enabled)')
         return
 
     if is_private := user_message[0] == '?':
-        user_message = user_message[1:]
+        user_message = user_message
 
     try:
         response: str = get_response(user_message)

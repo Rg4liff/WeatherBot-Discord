@@ -29,8 +29,9 @@ def GetCoords(addr):
         coords = f'{info["results"][0]["geometry"]["location"]["lat"]},{info["results"][0]["geometry"]["location"]["lng"]}'
         return coords
 
-# check if this works first and retrieves prop coords before implementing
 
-#test_address = '1609 S 33rd St, Omaha, NE'
-#test_coords = GetCoords(test_address)
-#print(test_coords)
+# check if this works first and retrieves prop coords before implementing
+if __name__ == '__main__':
+    test_address = '1609 S 33rd St, Omaha, NE'
+    test_coords = GetCoords(test_address)
+    print(test_coords)
